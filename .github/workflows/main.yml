@@ -25,6 +25,9 @@ jobs:
         run: |
           yarn autoclean
           yarn build
+          
+      - name: tese
+        run: echo ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy to GH Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
