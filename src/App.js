@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import PetsByTags from './PetsByTags';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        Petstore-Frontend — UI for Swagger Petstore v3 API
+        <br />
+        <a href={'https://petstore3.swagger.io/'}>https://petstore3.swagger.io/</a>
       </header>
-    </div>
+      <hr />
+      <main>
+        <PetsByTags />
+      </main>
+    </>
   );
 }
 
